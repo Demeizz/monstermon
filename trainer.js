@@ -1,1 +1,1 @@
-alert("Aqui va el codigo javascript del juego")
+alert("Inserte codigo js")

@@ -1,15 +1,120 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <tittle>Monstermon|Your New Adventure</tittle>
-  </head>
-  <body>
-    <h1>Welcome to your new super amazing and awesome adventure </h1>
-    <p>
-      Choose your new monstermon
-        <buttom>Fire</buttom>
-        <buttom>Earth</buttom>
-        <buttom>Water</buttom>
-        <buttom>Air</buttom>
-    </p>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Monstermon👾</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        #encabezado {
+            text-align: center;
+            text-decoration: double;
+            color: rgba(200, 147, 12, 0.812);
+        }
+
+        #monstermon-seleccion {
+            text-align: justify;
+            color: rgb(114, 160, 95);
+        }
+
+        .seleccion {
+            text-align: start;
+            background-color: green;
+            padding: 20px;
+            border: 3px solid rgba(85, 222, 240, 0.999);
+            width: 50%;
+            height: 30%;
+            color: black;
+            font-weight: bold;
+        }
+
+        #ataque-monster {
+            color: blueviolet;
+            text-align: justify;
+        }
+
+        .ataque {
+            font-weight: bold;
+            color: black;
+        }
+
+        button {
+            font-weight: bold;
+            background-color: azure;
+            color: brown;
+        }
+
+        .buttons {
+            text-align: center;
+        }
+    </style>
+   
+</head>
+
+<body>
+    <section id="encabezado">
+        <h1>Monstermon🪨💧🔥🍃</h1>
+    </section>
+    <!--Divison por secciones para elegir un tipo de monstermon de cada elemento-->
+    <section id="monstermon-seleccion">
+        <h2>Eligue a tu monstermon</h2>
+        <section class="seleccion">
+
+            <label for="wateremus">Wateremus</label>
+            <input type="radio" name="mascotas" id="wateremus">
+
+            <label for="firechu">Firechu</label>
+            <input type="radio" name="mascotas" id="firechu">
+
+            <label for="flyker">Flyker</label>
+            <input type="radio" name="mascotas" id="flyker">
+
+            <label for="charirock">Charirock</label>
+            <input type="radio" name="mascotas" id="charirock">
+
+        </section>
+        <section class="buttons">
+            <p>
+                <button id="button-confirm">Confirmar</button>
+            </p>
+        </section>
+
+    </section>
+    <!--Divison por seccion para seleccionar el ataque-->
+    <section id="ataque-monster">
+        <h2>Selecciona tu ataque</h2>
+        <section class="ataque">
+            <p>
+                <!--Vidas de los monstermon-->
+            <p>Tu monstermon tiene <span>3</span> vidas</p>
+            <p>El monstermon enemigo tiene <span>3</span> vidas</p>
+            <!--Botones para cada elemento-->
+            <section class="seleccion">
+                <button id="button-rock">Tierra🪨</button>
+                <button id="button-fire">Fuego🔥</button>
+                <button id="button-fly">Aire🍃</button>
+                <button id="button-water">Agua💧</button>
+            </section>
+            </p>
+        </section>
+    </section>
+    <!--Seccion para mensajes dentro del juego-->
+    <section id="mensajes">
+        <p>Tu monstermon ataco con Fuego🔥</p>
+        <p>El mostermon enemigo ataca con Tierra🪨</p>
+    </section>
+
+    <section id="repeat">
+        <h2>Deseas jugare otra vez?</h2>
+        <section class="buttons">
+            <p><button id="button-yes">Start again?</button></p>
+        </section>
+
+    </section>
+    <script src="js/CodigojsMonstemon.js"></script>
+</body>
+
 </html>
